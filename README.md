@@ -30,10 +30,11 @@ gulp <desired task> //given below
 
 
 #Run different Gulp tasks
-#$ gulp watch                              # starts up the local server and #auto-reloads the browser
-#$ gulp test                               # runs the test specs, available only if jest is included
-#$ gulp build:production                   # minifies your app, ready for production
-#$ gulp serve:production                   # to preview the built files
+$ gulp watch                              # starts up the local server and auto-reloads the browser
+$ gulp test                               # runs the test specs, available only if jest is included
+$ gulp build:production                   # minifies your app, ready for production
+$ gulp serve:production                   # to preview the built files
+
 
 
 #P.S.
