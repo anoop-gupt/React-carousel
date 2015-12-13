@@ -3,7 +3,7 @@
 #Just a POC on React using ES6
 
 
-Bundled through:
+#Bundled through:
 
 React
 Gulp
@@ -13,7 +13,7 @@ Babelify
 Bower
 Sass
 
-Dependency on:
+#Dependency on:
 Twitter Bootstrap
 React JS
 Bebel
@@ -29,14 +29,14 @@ bower update
 gulp <desired task> //given below
 
 
-Run different Gulp tasks
-$ gulp watch                              # starts up the local server and auto-reloads the browser
-$ gulp test                               # runs the test specs, available only if jest is included
-$ gulp build:production                   # minifies your app, ready for production
-$ gulp serve:production                   # to preview the built files
+#Run different Gulp tasks
+#$ gulp watch                              # starts up the local server and #auto-reloads the browser
+#$ gulp test                               # runs the test specs, available only if jest is included
+#$ gulp build:production                   # minifies your app, ready for production
+#$ gulp serve:production                   # to preview the built files
 
 
-P.S.
+#P.S.
 
 Development Folder is "app"
 After build pages are being generated in "dist"
