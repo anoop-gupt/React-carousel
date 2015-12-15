@@ -1,26 +1,31 @@
 import React from 'react';
-
+import Figure from './figure';
+import Title from './title';
+import Content from './content';
 export default class extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      items: [
-        'Image1',
-        'Image2',
-        'Image3',
-        'Image4'
-      ]
-    };
-  }
 
-  render() {
-    return (
-    <ul className="items" source="./data/basic_carousel.json">{this.state.items.map(this.renderItem)}</ul>
-    );
-  }
+            "url" : "instructions.html",
+            "img" : "./images/test_carousel_image_2.jpg",
+            "alt" : "Alt text for image 1" ,
+            "title" : "1st Item",
+            "content" : "Anoop xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. "
 
-  renderItem(item, index) {
-    return <li key={index}><a href="">{item}</a></li>;
-  }
+};
 
+
+  }
+render(){
+  return (
+    <div className="col-sm-3 col-md-3 active item">
+      <Figure img={this.state.img}/>
+      <div className="carousel-slide">
+       <Title title={this.state.title}/>
+       <Content content={this.state.content}/>
+      </div>
+    </div>
+  );
+}
 }

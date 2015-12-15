@@ -7,5 +7,5 @@ import $Jquery from 'jquery';
 window.React = React;
 const carouselNode = document.getElementById('carousel');
 
-//ReactDOM.render(<Carousel/>, carouselNode);
+ReactDOM.render(<Carousel/>, carouselNode);
 

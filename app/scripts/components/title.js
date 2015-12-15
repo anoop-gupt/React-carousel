@@ -1,18 +1,14 @@
 import React from 'react';
-import Item from './items';
-
 export default class extends React.Component {
   constructor(props) {
     super(props);
-
+    this.state = {
+      title: ['Dynamic Title']
+    };
   }
-
-  render() {
+  render(){
     return (
-    <div>
-      <Item/>
-   </div>
-   )
-
+          <h2>{this.state.title}</h2>
+    );
   }
 }

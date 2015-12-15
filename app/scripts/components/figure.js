@@ -1,18 +1,15 @@
 import React from 'react';
-import Item from './items';
 
 export default class extends React.Component {
   constructor(props) {
     super(props);
 
   }
-
-  render() {
+  render(){
     return (
-    <div>
-      <Item/>
-   </div>
-   )
-
+        <figure>
+          <img src={this.props.img}/>
+        </figure>
+    );
   }
 }
