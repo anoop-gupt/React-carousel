@@ -23,8 +23,8 @@ Just a POC on React using ES6
 
 
 #####How to start:
-
-CD to the clone diractory
+clone the repo - npm clone [url]
+CD to the cloned directory
 
 - npm install
 - bower update
