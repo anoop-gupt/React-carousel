@@ -5,10 +5,10 @@ export default class extends React.Component{
   constructor(props){
     super(props);
 
-  };
+  }
   render(){
    return(
-    <div class="carousel-navigation">
+    <div className="carousel-navigation">
             <div className="control">
                 <a className="arrow left" href="#">&lsaquo;</a>
                   <ol className="slider-indicators">

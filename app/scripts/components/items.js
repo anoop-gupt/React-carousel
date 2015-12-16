@@ -26,6 +26,7 @@ render(){
        <Content content={this.state.content}/>
       </div>
     </div>
+
   );
 }
 }
