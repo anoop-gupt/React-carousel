@@ -11,9 +11,6 @@ export default class extends React.Component {
     return (
     <div className="carousel-inner">
       <Item/>
-      <Item/>
-      <Item/>
-      <Item/>
       <Control/>
    </div>
    )

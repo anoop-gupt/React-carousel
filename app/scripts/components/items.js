@@ -7,26 +7,143 @@ export default class extends React.Component {
     super(props);
     this.state = {
 
+          "items" : [
+          {
             "url" : "instructions.html",
-            "img" : "./images/test_carousel_image_2.jpg",
+            "img" : "./images/test_carousel_image_1.jpg",
             "alt" : "Alt text for image 1" ,
             "title" : "1st Item",
-            "content" : "Anoop xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. "
+            "content" : "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. "
 
-};
 
+          },
+          {
+            "url" : "instructions.html",
+            "img" : "./images/test_carousel_image_2.jpg",
+            "alt" : "Alt text for image 2" ,
+            "title" : "2nd Item",
+            "content" : "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. "
+
+
+          },
+          {
+            "url" : "instructions.html",
+            "img" : "./images/test_carousel_image_3.jpg",
+            "alt" : "Alt text for image 3" ,
+            "title" : "3rd Item",
+            "content" : "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. "
+
+
+          },
+          {
+            "url" : "instructions.html",
+            "img" : "./images/test_carousel_image_4.jpg",
+            "alt" : "Alt text for image 4" ,
+            "title" : "4th Item",
+            "content" : "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. "
+
+
+          },
+          {
+            "url" : "instructions.html",
+            "img" : "./images/test_carousel_image_5.jpg",
+            "alt" : "Alt text for image 5" ,
+            "title" : "5th Item",
+            "content" : "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. "
+
+
+          },
+          {
+            "url" : "instructions.html",
+            "img" : "./images/test_carousel_image_6.jpg",
+            "alt" : "Alt text for image 6" ,
+            "title" : "6th Item",
+            "content" : "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. "
+
+
+          },
+          {
+            "url" : "instructions.html",
+            "img" : "./images/test_carousel_image_7.jpg",
+            "alt" : "Alt text for image 7" ,
+            "title" : "7th Item",
+            "content" : "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. "
+
+
+          },
+          {
+            "url" : "instructions.html",
+            "img" : "./images/test_carousel_image_8.jpg",
+            "alt" : "Alt text for image 8" ,
+            "title" : "8th Item",
+            "content" : "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. "
+
+
+          },
+          {
+            "url" : "instructions.html",
+            "img" : "./images/test_carousel_image_9.jpg",
+            "alt" : "Alt text for image 1" ,
+            "title" : "9th Item",
+            "content" : "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. "
+
+
+          },
+          {
+            "url" : "instructions.html",
+            "img" : "./images/test_carousel_image_10.jpg",
+            "alt" : "Alt text for image 10" ,
+            "title" : "10th Item",
+            "content" : "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. "
+
+
+          },
+          {
+            "url" : "instructions.html",
+            "img" : "./images/test_carousel_image_11.jpg",
+            "alt" : "Alt text for image 11" ,
+            "title" : "11th Item",
+            "content" : "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. "
+
+
+          },
+          {
+            "url" : "instructions.html",
+            "img" : "./images/test_carousel_image_12.jpg",
+            "alt" : "Alt text for image 12" ,
+            "title" : "12th Item",
+            "content" : "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. "
+
+
+          }
+      ]
+      }
+    }
+
+
+
+render(){
+    return (
+
+         <div id="item-container">
+         {this.state.items.map(this.renderItem)}
+         </div>
+
+    );
+}
+
+renderItem(item,index){
+
+     return (
+      <div className="col-sm-3 col-md-3 active item" key={index}>
+        <Figure img={item.img} alt={item.alt} />
+        <div className="carousel-slide">
+         <Title title={item.title}/>
+         <Content content={item.content}/>
+        </div>
+      </div>
+      )
 
   }
-render(){
-  return (
-    <div className="col-sm-3 col-md-3 active item">
-      <Figure img={this.state.img}/>
-      <div className="carousel-slide">
-       <Title title={this.state.title}/>
-       <Content content={this.state.content}/>
-      </div>
-    </div>
 
-  );
-}
 }

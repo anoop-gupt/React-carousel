@@ -8,7 +8,7 @@ export default class extends React.Component {
   render(){
     return (
         <figure>
-          <img src={this.props.img}/>
+          <img src={this.props.img} alt={this.props.alt}/>
         </figure>
     );
   }

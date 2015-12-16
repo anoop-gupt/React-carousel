@@ -8,7 +8,7 @@ export default class extends React.Component {
   }
   render(){
     return (
-          <h2>{this.state.title}</h2>
+          <h2>{this.props.title}</h2>
     );
   }
 }
