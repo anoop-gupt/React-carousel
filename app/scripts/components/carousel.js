@@ -9,7 +9,7 @@ export default class extends React.Component {
 
   render() {
     return (
-    <div className="carousel-inner">
+    <div className="carousel-items-containers">
       <Item/>
       <Control/>
    </div>

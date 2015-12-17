@@ -1,0 +1,97 @@
+.carousel-items-containers {
+  overflow: hidden;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    white-space: nowrap;
+    width: 100%;
+
+    > li {
+      display: inline-block;
+      float: none;
+      padding: 0 15px;
+      white-space: normal;
+      width: 100%;
+      @media screen and (min-width: $screen-sm) {
+        width: 25%;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+  h2 {
+    color: #021c4f;
+    font-size: 26px;
+  }
+}
+
+.carousel-navigation {
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+
+  .control {
+    display: inline-block;
+
+    .prev-btn,
+    .next-btn {
+      background: url('../images/carousel_sprite.png') no-repeat;
+      display: inline-block;
+      height: 25px;
+      overflow: hidden;
+      text-indent: 101px;
+      width: 25px;
+    }
+
+    .prev-btn {
+      background-position: -5px -28px;
+    }
+
+    .next-btn {
+      background-position: -5px -65px;
+    }
+
+    @media screen and (max-width: $screen-xs) {
+      top: 102%;
+    }
+
+  }
+}
+
+.indicators {
+  display: inline-block;
+  margin: 5px;
+  padding: 0;
+
+  .active {
+    background-position: -4px -99px;
+    height: 15px;
+    width: 15px;
+  }
+
+  li {
+    background: url('../images/carousel_sprite.png') no-repeat -35px -99px;
+    float: left;
+    height: 15px;
+    overflow: hidden;
+    width: 15px;
+
+    a {
+      display: block;
+      height: 15px;
+      width: 15px;
+
+      &:after {
+        content: '.';
+        line-height: 101px;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+

@@ -1,152 +1,22 @@
-$icon-font-path: "/fonts/bootstrap/";
-@import "bootstrap-sass-official/assets/stylesheets/bootstrap";
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 
-body {
-  background: #fafafa;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size:0.75em;
-  color: #333;
-}
+// bower:scss
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
 
-a{
-  text-decoration: none;
-}
-
-ul{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.content {
-  margin:0 auto;
-  text-align:left;
-  width:960px;
-  background:#fff;
-}
-.clear {
-  display:block;
-  float:none;
-  clear:both;
-
-}
-.instructions {
-  display:block; float:left; clear:none; width: 460px; margin:10px;
-}
-img {
-  border:none;
-}
-.hero-unit {
-  margin: 50px auto;
-  width: 400px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 30px;
-  background-color: #eee;
-  border-radius: 6px;
-  padding: 60px;
-
-  h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-}
+// Modules
+@import "./modules/_carousel.scss";
 
 .browsehappy {
-  margin: 0.2em 0;
   background: #ccc;
   color: #000;
-  padding: 0.2em 0;
+  margin: .2em 0;
+  padding: .2em 0;
 }
 
-/* ---------------------- Start the carousel CSS here -------------------- */
-
-
-/* Carousel Responsive */
 .container {
   padding: 10px 0;
   @media (min-width: $screen-lg-min) {
-    width: 960px;
+    width: 1014px;
   }
 }
-
-@media screen and (min-width: $screen-sm-min) {
-  .slider-indicators {
-    bottom: -35px;
-  }
-}
-
-.arrow {
-  width: 30px;
-  height: 30px;
-  text-indent: -501px;
-  overflow: hidden;
-  display: inline-block;
-
-  &.left,
-  &.right {
-   background: url(../images/carousel_sprite.png) no-repeat;
-  }
-
-  &.left {
-    background-position: -5px -28px;
-  }
-
-  &.right {
-    background-position: -5px -65px;
-  }
-
-  @media screen and (max-width: $screen-xs) {
-    top: 102%;
-  }
-
-}
-
-.slider-indicators {
-  padding: 0;
-  display: inline-block;
-
-
-  .active {
-    width: 15px;
-    height: 15px;
-    background-color: none;
-    background-position: -4px -99px;
-  }
-
-  li {
-    background: url(../images/carousel_sprite.png) no-repeat -35px -99px;
-    width: 15px;
-    height: 15px;
-    float: left;
-    overflow: hidden;
-  }
-}
-
-.carousel-slide {
-  h2 {
-    color: #021c4f;
-    font-size: 26px;
-  }
-  p{
-    font-size: 14px;
-  }
-}
-
-.carousel-inner {
-  img {
-    width: 100%;
-  }
-}
-
-.carousel-navigation {
-  margin-top: 10px;
-  text-align: center;
-  width: 100%;
-
-  .control {
-    display: inline-block;
-  }
-}
-

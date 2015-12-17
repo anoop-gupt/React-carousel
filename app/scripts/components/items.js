@@ -125,8 +125,10 @@ export default class extends React.Component {
 render(){
     return (
 
-         <div id="item-container">
+         <div id="carousel-items-containers">
+         <ul>
          {this.state.items.map(this.renderItem)}
+         </ul>
          </div>
 
     );
@@ -135,13 +137,13 @@ render(){
 renderItem(item,index){
 
      return (
-      <div className="col-sm-3 col-md-3 active item" key={index}>
+      <li key={index} class="item">
         <Figure img={item.img} alt={item.alt} />
-        <div className="carousel-slide">
+        <div className="media-contianer">
          <Title title={item.title}/>
          <Content content={item.content}/>
         </div>
-      </div>
+      </li>
       )
 
   }

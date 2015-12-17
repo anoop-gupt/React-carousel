@@ -8,18 +8,19 @@ export default class extends React.Component{
   }
   render(){
    return(
-    <div className="carousel-navigation">
-            <div className="control">
-                <a className="arrow left" href="#">&lsaquo;</a>
-                  <ol className="slider-indicators">
-                    <li className="active"></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                  </ol>
-                <a className="arrow right" href="#">&rsaquo;</a>
+            <div className="carousel-navigation">
+              <div className="control">
+                  <a className="prev-btn" href="#">&lsaquo;</a>
+                    <ol className="indicators">
+                      <li className="active"><a href="#"></a></li>
+                      <li><a href="#"></a></li>
+                      <li><a href="#"></a></li>
+                      <li><a href="#"></a></li>
+                      <li><a href="#"></a></li>
+                    </ol>
+                  <a className="next-btn" href="#">&rsaquo;</a>
+                </div>
             </div>
-    </div>
 
     )
   }

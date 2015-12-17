@@ -1,100 +1,137 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>React Carousel</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width">
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-  <link rel="stylesheet" href="styles/main.css">
-  <!-- build:js scripts/vendor/modernizr.js -->
-  <script src="bower_components/modernizr/modernizr.js"></script>
-  <!-- endbuild -->
-</head>
-<body>
-  <!--[if lt IE 10]>
-  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Carousel</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Static Carousel Skeleton Starts -->
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
 
     <div class="container">
       <div class="row">
-        <div id="carousel" class="carousel slide col-md-12">
-          <!-- Carousel items -->
-          <div class="carousel-inner">
-              <div class="col-sm-3 col-md-3 active item">
-                <figure>
-                  <img src="images/test_carousel_image_1.jpg">
-                </figure>
-                <div class="carousel-slide">
-                  <h2>Business</h2>
-                  <p>Promos about business deals that wraps onto two lines</p>
-                </div>
-              </div>
+        <div class="col-md-12">
+          <div class="carousel">
+            <!-- Carousel items -->
+            <div class="carousel-items-containers">
+              <ul>
+                <li class="item">
+                  <figure>
+                    <img src="images/test_carousel_image_1.jpg" alt="image-name">
+                  </figure>
+                  <div class="media-container">
+                    <h2>Business</h2>
+                    <p>Promos about business deals that wraps onto two lines</p>
+                  </div>
+                </li>
 
-              <div class="col-sm-3 col-md-3 active item">
-                <figure>
-                  <img src="images/test_carousel_image_2.jpg">
-                </figure>
-                <div class="carousel-slide">
-                  <h2>Business</h2>
-                  <p>Promos about business deals that wraps onto two lines</p>
-                </div>
-              </div>
+                <li class="item">
+                  <figure>
+                     <img src="images/test_carousel_image_2.jpg" alt="image-name">
+                  </figure>
+                  <div class="media-container">
+                    <h2>Business</h2>
+                    <p>Promos about business deals that wraps onto two lines</p>
+                  </div>
+                </li>
 
-              <div class="col-sm-3 col-md-3 active item">
-                <figure>
-                  <img src="images/test_carousel_image_4.jpg">
-                </figure>
-                <div class="carousel-slide">
-                  <h2>Business</h2>
-                  <p>Promos about business deals that wraps onto two lines</p>
-                </div>
-              </div>
+                <li class="item">
+                  <figure>
+                    <img src="images/test_carousel_image_4.jpg">
+                  </figure>
+                  <div class="media-container">
+                    <h2>Business</h2>
+                    <p>Promos about business deals that wraps onto two lines</p>
+                  </div>
+                </li>
 
-              <div class="col-sm-3 col-md-3 active item">
-                <figure>
-                  <img src="images/test_carousel_image_1.jpg">
-                </figure>
-                <div class="carousel-slide">
-                  <h2>Business</h2>
-                  <p>Promos about business deals that wraps onto two lines</p>
+                <li class="item">
+                  <figure>
+                    <img src="images/test_carousel_image_1.jpg" alt="image-name">
+                  </figure>
+                  <div class="media-container">
+                    <h2>Business</h2>
+                    <p>Promos about business deals that wraps onto two lines</p>
+                  </div>
+                </li>
+
+                <li class="item">
+                  <figure>
+                    <img src="images/test_carousel_image_1.jpg" alt="image-name">
+                  </figure>
+                  <div class="media-container">
+                    <h2>Business</h2>
+                    <p>Promos about business deals that wraps onto two lines</p>
+                  </div>
+                </li>
+
+                <li class="item">
+                  <figure>
+                    <img src="images/test_carousel_image_1.jpg" alt="image-name">
+                  </figure>
+                  <div class="media-container">
+                    <h2>Business</h2>
+                    <p>Promos about business deals that wraps onto two lines</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Carousel nav -->
+            <div class="carousel-navigation">
+              <div class="control">
+                  <a class="prev-btn" href="#">&lsaquo;</a>
+                    <ol class="indicators">
+                      <li class="active"><a href="#"></a></li>
+                      <li><a href="#"></a></li>
+                      <li><a href="#"></a></li>
+                      <li><a href="#"></a></li>
+                      <li><a href="#"></a></li>
+                    </ol>
+                  <a class="next-btn" href="#">&rsaquo;</a>
                 </div>
-              </div>
+            </div>
           </div>
-
-          <!-- Carousel nav -->
-          <div class="carousel-navigation">
-            <div class="control">
-                <a class="arrow left" href="#">&lsaquo;</a>
-                  <ol class="slider-indicators">
-                    <li class="active"></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                  </ol>
-                <a class="arrow right" href="#">&rsaquo;</a>
-              </div>
-          </div>
-
         </div>
       </div>
     </div>
-     <!-- Static Carousel Skeleton Ends -->
 
 
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
 
-  <div class="clear"></div>
 
-  <!-- build:js scripts/vendor.js -->
-  <!-- bower:js -->
-  <script src="bower_components/jquery/dist/jquery.js"></script>
-  <!-- endbower -->
-  <!-- endbuild -->
-  <script src="scripts/app.js"></script>
-</body>
+    <!-- build:js(.) scripts/plugins.js -->
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+
+    <!-- endbuild -->
+
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
 </html>
